@@ -278,14 +278,57 @@ export default function GLGCapitalWebsite() {
               <p className="mt-8 max-w-xl text-base leading-8 text-zinc-300 md:text-lg">{t.contactText}</p>
               <div className="mt-8 flex items-center gap-3 text-sm text-zinc-400"><Building2 className="h-5 w-5 text-zinc-500" /><span>{t.location}</span></div>
             </div>
-            <form className="rounded-[2rem] border border-zinc-800 bg-black/50 p-8 shadow-2xl shadow-black/30" onSubmit={(event) => event.preventDefault()}>
-              <div className="grid gap-5">
-                <label className="grid gap-2"><span className="text-xs uppercase tracking-[0.22em] text-zinc-500">{t.formName}</span><input className="rounded-2xl border border-zinc-800 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-700 focus:border-zinc-500" placeholder={t.formName} /></label>
-                <label className="grid gap-2"><span className="text-xs uppercase tracking-[0.22em] text-zinc-500">{t.formEmail}</span><input type="email" className="rounded-2xl border border-zinc-800 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-700 focus:border-zinc-500" placeholder="email@example.com" /></label>
-                <label className="grid gap-2"><span className="text-xs uppercase tracking-[0.22em] text-zinc-500">{t.formMessage}</span><textarea rows={5} className="resize-none rounded-2xl border border-zinc-800 bg-zinc-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-700 focus:border-zinc-500" placeholder={t.formMessage} /></label>
-                <button type="submit" className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-200">{t.formButton}<Send className="ml-2 h-4 w-4" /></button>
-              </div>
-            </form>
+            <form
+  action="https://formspree.io/f/mjgzaeez"
+  method="POST"
+  className="space-y-6"
+>
+  <div>
+    <label className="block text-sm mb-2 text-gray-300">
+      Nombre
+    </label>
+
+    <input
+      type="text"
+      name="name"
+      required
+      className="w-full bg-[#111827] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm mb-2 text-gray-300">
+      Email
+    </label>
+
+    <input
+      type="email"
+      name="email"
+      required
+      className="w-full bg-[#111827] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white"
+    />
+  </div>
+
+  <div>
+    <label className="block text-sm mb-2 text-gray-300">
+      Mensaje
+    </label>
+
+    <textarea
+      name="message"
+      rows="6"
+      required
+      className="w-full bg-[#111827] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
+  >
+    Enviar Mensaje
+  </button>
+</form>
           </div>
         </section>
       </main>
