@@ -298,6 +298,19 @@ export default function GLGCapitalWebsite() {
           </div>
           <div className="max-w-2xl">
             <p className="text-xs leading-6 text-zinc-500">{t.disclaimer}</p>
+            <div className="mt-4 flex flex-wrap gap-4 text-xs text-zinc-500">
+  <a href="/privacy-policy" className="hover:text-white">
+    Política de Privacidad
+  </a>
+
+  <a href="/terms-and-conditions" className="hover:text-white">
+    Términos y Condiciones
+  </a>
+
+  <span>
+    © 2026 GLG Capital Management. Todos los derechos reservados.
+  </span>
+</div>
             <div className="mt-5 flex justify-start lg:justify-end">
               <LanguageToggle language={language} setLanguage={setLanguage} />
             </div>
