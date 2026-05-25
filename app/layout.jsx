@@ -2,7 +2,11 @@ import "./globals.css";
 
 export const metadata = {
   title: "GLG Capital Management",
-  description: "Private asset management firm based in Santo Domingo, Dominican Republic.",
+  description:
+    "Private asset management firm based in Santo Domingo, Dominican Republic.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
