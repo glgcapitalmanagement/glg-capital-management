@@ -1,30 +1,19 @@
 {
-  "name": "glg-capital-management",
-  "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
-"dependencies": {
-  "next": "^16.2.6",
-  "react": "^19.0.0",
-  "react-dom": "^19.0.0",
-  "framer-motion": "^11.0.0",
-  "lucide-react": "^0.446.0"
-},
-    "@next/font": "latest",
-    "framer-motion": "latest",
-    "lucide-react": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+  "dependencies": {
+    "next": "^16.2.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.446.0"
   },
   "devDependencies": {
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20"
   }
 }
