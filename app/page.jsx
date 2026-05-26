@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, BarChart3, Shield, LineChart, Building2, Layers, Send } from "lucide-react";
+import { ArrowRight, BarChart3, Shield, LineChart, Building2, Layers, Send, Linkedin, Instagram, Facebook } from "lucide-react";
 
 const heroImage = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85";
 const decorativeImage = heroImage;
@@ -341,18 +341,41 @@ export default function GLGCapitalWebsite() {
           </div>
           <div className="max-w-2xl">
             <p className="text-xs leading-6 text-zinc-500">{t.disclaimer}</p>
-            <div className="mb-4 flex flex-wrap gap-4 text-xs text-zinc-500">
-  <a href="https://www.linkedin.com/company/glgcapital/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-    LinkedIn
+            <div className="mb-4 flex gap-5 text-zinc-500">
+  <a
+    href="https://www.linkedin.com/company/glgcapital/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+  >
+    <Linkedin size={18} />
   </a>
-  <a href="https://x.com/glgcapital" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+
+  <a
+    href="https://x.com/glgcapital"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition font-bold text-sm"
+  >
     X
   </a>
-  <a href="https://www.instagram.com/glgcapital/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-    Instagram
+
+  <a
+    href="https://www.instagram.com/glgcapital/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+  >
+    <Instagram size={18} />
   </a>
-  <a href="https://www.facebook.com/glgcapitalmanagement/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-    Facebook
+
+  <a
+    href="https://www.facebook.com/glgcapitalmanagement/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+  >
+    <Facebook size={18} />
   </a>
 </div>
             <div className="mt-4 flex flex-wrap gap-4 text-xs text-zinc-500">
