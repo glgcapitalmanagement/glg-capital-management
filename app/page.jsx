@@ -341,6 +341,20 @@ export default function GLGCapitalWebsite() {
           </div>
           <div className="max-w-2xl">
             <p className="text-xs leading-6 text-zinc-500">{t.disclaimer}</p>
+            <div className="mb-4 flex flex-wrap gap-4 text-xs text-zinc-500">
+  <a href="https://www.linkedin.com/company/glgcapital/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+    LinkedIn
+  </a>
+  <a href="https://x.com/glgcapital" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+    X
+  </a>
+  <a href="https://www.instagram.com/glgcapital/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+    Instagram
+  </a>
+  <a href="https://www.facebook.com/glgcapitalmanagement/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+    Facebook
+  </a>
+</div>
             <div className="mt-4 flex flex-wrap gap-4 text-xs text-zinc-500">
   <a href="/privacy-policy" className="hover:text-white">
     Política de Privacidad
